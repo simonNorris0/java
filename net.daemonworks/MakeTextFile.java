@@ -1,3 +1,5 @@
+package net.daemonworks;
+
 import java.io.*;
 import java.util.*;
 

@@ -1,5 +1,0 @@
-update the name of this directory to:
-reversedDomainName
-once I have my unique domain name registered.
-(as per the java naming convention for libraries)
-Feb 2024
