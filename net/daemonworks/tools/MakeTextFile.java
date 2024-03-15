@@ -1,11 +1,26 @@
-package net.daemonworks;
+package net.daemonworks.tools;
 
 import java.io.*;
 import java.util.*;
 
+/**
+   MakeTextFile.java
+   @author simonNorris0
+   @author Simon Norris
+   @date March 12, 2024
+   @version V1.0
+   
+   <h3> Purpose </h3>
+   Construct very large text files, with various
+   modifications/requirements (such as line number count,
+   blank lines, ...) for testing different database interface 
+   implementations and algorithms. 
+                                             */
 public class MakeTextFile {
    /** private static void nLines(int n)
-       writes n lines into a text file    */
+       writes n lines into a text file
+       named TextFile.txt and writes that
+       file to the working directory.      */
    private static void nLines(int n) {
       try {
          File newFile = new File("TextFile.txt");
@@ -35,7 +50,8 @@ public class MakeTextFile {
    }
    /** private static void nLinesBlanks(int n)
        writes n lines into a text file with blanks
-       throughout                                  */
+       throughout, named TextFile.txt, and then 
+       writes that file to the working directory   */
    private static void nLinesBlanks(int n) {
       Random randomBlanks = new Random(79); // seeded, just remove for 'randomness'
       try {
@@ -69,10 +85,10 @@ public class MakeTextFile {
          return;
       }
    }
-   /** */
+   /** make some text files */
    public static void main(String[] args) {
       //nLines(1000000);
-      nLinesBlanks(1000000);
+      //nLinesBlanks(1000000);
       return;
    }
 }
